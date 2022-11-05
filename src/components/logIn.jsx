@@ -10,7 +10,7 @@ function LogIn() {
 
     return(
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={() => handleSubmit()}>
                 <div className="imgcontainer">
                     <img src="assets/ge.png" alt="Avatar" className="avatar" style={{width: "100px"}}/>
                 </div>

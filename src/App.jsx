@@ -33,8 +33,8 @@ const App = () => {
 
 
 	function handleSubmit(e) {
-		console.log(e);
 		e.preventDefault();
+		console.log(e);
 		const data = new FormData(e.target);
 		console.log(data);
 		console.log(Object.fromEntries(data.entries()));
