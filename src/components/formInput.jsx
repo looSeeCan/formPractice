@@ -15,32 +15,33 @@ import "../CSS/formInput.css";
 
 // export default FormInput;
 
-const FormInput = (props) => {
-    
+const FormInput = (props) => {              
+    // console.log(values)
     // console.log(props);
-    const {label, errorMessage, onChange, id, ...inputProps} = props;
-    // console.log(label);
-    // console.log(onChange);
-    // console.log(id);
-    // console.log(inputProps);
+    const {label, errorMessage, onChange, id, ...inputProps} = props; /// destructuring props
     
     const [focused, setFocused] = useState(false); /// for onBlur
-    console.log(useState());
-    console.log(focused);
     
     const handleFocus = (e) => {
         console.log(e);
         setFocused(true);
+        // console.log(focused.toString());
     };
 
     return(
         <div className="formInput">
             <label>{label}</label>
             {/* the onBlur event occurs when an event looses focus */}
-            <input {...inputProps} onChange={onChange} onBlur={handleFocus} />
+            <input 
+                {...inputProps} 
+                onChange={onChange} 
+                onBlur={handleFocus}
+                onFocus={() => inputProps.name === "confirmPassWord" && setFocused(true)}
+                focused={focused.toString()} 
+            />
             <span>{errorMessage}</span>
         </div>
     );
 }
 
-export default FormInput;
+export default FormInput;   
