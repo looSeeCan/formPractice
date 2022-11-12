@@ -28,11 +28,11 @@ const FormInput = (props) => {
         // console.log(focused.toString());
     };
 
-    return(
+    return( /// onFocus - there is an issue when the focus is in the last
         <div className="formInput">
             <label>{label}</label>
             {/* the onBlur event occurs when an event looses focus */}
-            <input 
+            <input
                 {...inputProps} 
                 onChange={onChange} 
                 onBlur={handleFocus}

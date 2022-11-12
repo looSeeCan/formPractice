@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    padding:2rem;
+}
+
+/* .userLogInAuthbutton{
+    background-color: lightgoldenrodyellow;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    width: 120px;
+    cursor: pointer;
+} */
+
+button{
+    background-color: lightgoldenrodyellow;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    width: 120px;
+    cursor: pointer;  
+}

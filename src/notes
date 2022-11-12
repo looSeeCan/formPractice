@@ -1,0 +1,19 @@
+youtube tutorial: Simple React.js User Login Authentication|Auth0
+
+auth0.com: /// signed in with github account
+
+go to applications
+create applications - name application
+choose technology - react
+go to settings - skip the top information for now
+Allowed Callback URLs - http://locahost:3001
+Alllowed Logout Urls - http://locahost:3001
+Alllowed Web Origins - http://locahost:3001
+Save changes
+create .env file in root - add the 2 parameters 
+install auth0 package - npm i @auth0/auth0-react
+index.js - declare variables, import Auth0Provider
+create userLogInAuth.jsx - 
+css
+create usrLogOutAuth.jsx
+create profile.jsx
